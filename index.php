@@ -14,18 +14,18 @@ if (!isset($_SESSION['id_admin'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Dashboard</title>
+    <title>Dasboard admin</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.php">Museum Management</a>
+        <a class="navbar-brand" href="./index.php">Museum</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <!-- Museum Management Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="museumDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Museum Management
+                        museum
                     </a>
                     <div class="dropdown-menu" aria-labelledby="museumDropdown">
                         <a class="dropdown-item" href="museum/index.php">Museum</a>
@@ -48,7 +48,7 @@ if (!isset($_SESSION['id_admin'])) {
                 <!-- Visitor Management Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="visitorDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Visitor Management
+                        pengunjung
                     </a>
                     <div class="dropdown-menu" aria-labelledby="visitorDropdown">
                         <a class="dropdown-item" href="pengunjung/index.php">Visitors</a>
@@ -57,7 +57,7 @@ if (!isset($_SESSION['id_admin'])) {
                 <!-- Location Management Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="locationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Location Management
+                        lokasi
                     </a>
                     <div class="dropdown-menu" aria-labelledby="locationDropdown">
                         <a class="dropdown-item" href="negara/index.php">Negara</a>
@@ -82,7 +82,7 @@ if (!isset($_SESSION['id_admin'])) {
 
     <div class="container mt-5">
         <h1 class="text-center">Dashboard</h1>
-        <h3 class="mt-4">Manage:</h3>
+        <h3 class="mt-4">manage:</h3>
         <div class="list-group">
             <?php if ($_SESSION['level'] == 'admin' || $_SESSION['level'] == 'superadmin'): ?>
                 <a href="museum/index.php" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
@@ -93,13 +93,13 @@ if (!isset($_SESSION['id_admin'])) {
                     Jenis Kunjungan
                     <i class="fas fa-eye"></i>
                 </a>
-                <a href="pameran/index.php" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                <a href="pameran/index.php" class="list-group,-item list-group-item-action d-flex justify-content-between align-items-center">
                     Pameran
                     <i class="fas fa-artstation"></i>
                 </a>
             <?php endif; ?>
             <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                View Visitors
+                pengunjung
                 <i class="fas fa-users"></i>
             </a>
         </div>

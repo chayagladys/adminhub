@@ -1,6 +1,7 @@
+
 <?php
 $host = '';
-$db = 'museum';
+$db = 'museum__3_';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
