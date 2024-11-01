@@ -22,6 +22,23 @@ menuBar.addEventListener('click', function () {
 	sidebar.classList.toggle('hide');
 })
 
+// script.js
+
+function toggleDropdown(event) {
+    event.preventDefault(); // Prevent default action
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block'; // Toggle display
+}
+
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    if (!event.target.matches('.dropdown-toggle') && dropdownMenu.style.display === 'block') {
+        dropdownMenu.style.display = 'none'; // Close the dropdown
+    }
+};
+
+
 
 
 

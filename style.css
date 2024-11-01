@@ -47,6 +47,16 @@ body {
 }
 
 
+.dropdown-menu {
+    display: none; /* Sembunyikan dropdown secara default */
+    background-color: #005bb5;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 5px; /* Jarak antara tombol dan dropdown */
+    padding: 0; /* Menghapus padding dari dropdown */
+    width: 100%; /* Lebar penuh */
+}
 
 
 
@@ -589,4 +599,17 @@ body {
 	#content main .table-data .todo .todo-list {
 		min-width: 420px;
 	}
+}
+
+.dropdown-menu {
+    padding: 0; /* Menghapus padding default */
+}
+
+.dropdown-item {
+    padding: 10px 15px; /* Menambah padding atas dan bawah */
+    margin: 5px 0; /* Menambah margin antar item */
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Warna latar belakang saat hover */
 }
